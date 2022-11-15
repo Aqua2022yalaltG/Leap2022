@@ -44,33 +44,49 @@ header img {
 }
 
 .image-box {
+  position: relative;
   display: block;
-  max-width: 430px;
+  max-width: 200px;
   min-width: 100px;
-  width: 100%;
-  height: auto;
-}
-
-.image-box > img {
-  width: 100%;
   height: auto;
   margin: 5px;
 }
 
-@media (min-width: 430px) {
+.image-box > img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 200px) {
   .image-box {
     display: inline-block;
-    max-width: 200px;
-    min-width: 50px;
-    height: auto;
+    max-width: 400px;
+    min-width: 200px;
+  }
+}
+
+@media (min-width: 400px) {
+  .image-box {
+    display: inline-block;
+    max-width: 600px;
+    min-width: 401px;
   }
 }
 
 @media (min-width: 600px) {
   .image-box {
     display: inline-block;
-    max-width: 400px;
-    min-width: 100px;
+    max-width: 1023px;
+    min-width: 601px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .image-box {
+    display: inline-block;
+    min-width: 600px;
+    max-width: 900px;
     height: auto;
   }
 }
