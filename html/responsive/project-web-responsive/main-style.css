@@ -234,9 +234,13 @@ header .dropdown-menu {
   }
 
   .right-news-details .news-text {
-    width: 100vw;
+    max-width: 60%;
     height: auto;
     margin: 0;
+  }
+
+  .right-news-details img {
+    max-width: 60%;
   }
 
   .right-news-details p.description-text {

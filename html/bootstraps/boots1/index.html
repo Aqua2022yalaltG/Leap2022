@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+    <title>Bootstraps Example</title>
+  </head>
+  <body class="bg-light">
+    <header class="bg-primary">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">Home</li>
+          <li class="nav-item">Cool</li>
+          <li class="nav-item">Contact</li>
+          <li class="nav-item">Login</li>
+        </ul>
+        <form class="d-flex" role="login">
+          <button
+            class="btn btn-outline-success"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="loginModal"
+          >
+            Login
+          </button>
+        </form>
+      </nav>
+    </header>
+    <h2 class="text-warning">Welcome to Modal Login</h2>
+
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Modal COntent -->
+            <form>
+              <!-- form heseg -->
+              <div class="mb-3">
+                <label for="exampleFormControlUsername" class="form-label"
+                  >Username</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlUsername"
+                  placeholder="Enter username"
+                /><br />
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlPassword" class="form-label"
+                  >Enter your password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleFormControlPassword"
+                  placeholder="Enter your password"
+                />
+              </div>
+            </form>
+
+            <!-- Modal COntent -->
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal heseg -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
